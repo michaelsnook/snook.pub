@@ -1,0 +1,19 @@
+markdown: kramdown
+title: Michael Snook dot com
+footer:
+ - text: home
+   icon: home
+   href: ./
+ - text: twitter
+   icon: social-twitter
+   href: https://twitter.com/MichaelSnook
+ - text: facebook
+   icon: social-facebook
+   href: https://facebook.com/michaelsnook
+ - text: github
+   icon: social-github
+   href: https://github.com/michaelsnook
+ - text: "CC0 1.0"
+   icon: closed-caption
+   href: https://github.com/michaelsnook/michaelsnook/blob/gh-pages/LICENSE
+ - text: "by me"

@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+  <title>{{ site.title }} {% if page.title %}| {{ page.title }}{% endif %}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="static/images/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="static/stylesheets/normalize.css" />
+  <link rel="stylesheet" href="static/stylesheets/foundation.css" />
+  <link rel="stylesheet" href="static/stylesheets/foundation-icons.css" />
+  <link rel="stylesheet" href="static/stylesheets/styles.css" />
+  
+  <script src="static/javascripts/modernizr.js"></script>
+</head>
+<body>
+<nav id="header">
+  <div class="row">
+    <div class="small-12 columns">
+      <h1 class="left">Title</h1>
+      <h3 class="aside left">dev site</h3>
+    </div>
+  </div>
+</nav>
+<div class="body-wrapper">  
+  {{ content }}
+</div>
+
+<footer>
+  <div class="row">
+    <div class="medium-12 columns">
+      <ul class="inline-list">
+        {% for item in site.footer %}
+        <li>{% if item.href %}<a href="{{ item.href }}">{% endif %}
+          {% if item.icon %}<i class="fi-{{ item.icon }}"></i>{% endif %}
+          {% if item.text %}{{ item.text }}{% endif %}
+        {% if item.href %}</a>{% endif %}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</footer>
+
+	<script src="static/javascripts/jquery.js"></script>
+	<script src="static/javascripts/foundation.js"></script>
+	<script src="static/javascripts/foundation.reveal.js"></script>
+
+  <script>
+  $(document).ready(function() {
+ 
+    // site javascript here
+ 
+  });
+  </script>
+
+</body>
+</html>
