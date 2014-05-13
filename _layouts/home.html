@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
   <title>{{ site.title }} {% if page.title %}| {{ page.title }}{% endif %}</title>
@@ -15,9 +15,13 @@
 <nav id="header">
   <div class="row">
     <div class="small-12 columns">
-      <h1 class="left">Title</h1>
-      <h3 class="aside left">dev site</h3>
-    </div>
+      <h1>Michael Snook</h1>
+     
+      <div data-alert class="alert-box radius warning">
+        This is a warning that the site is UNDER CONSTRUCTION. The close button on this alert hasn't even been turned on.
+        <a href="#" class="close">&times;</a>
+      </div>
+    </div>   
   </div>
 </nav>
 <div class="body-wrapper">  
@@ -41,7 +45,6 @@
 
 	<script src="static/javascripts/jquery.js"></script>
 	<script src="static/javascripts/foundation.js"></script>
-	<script src="static/javascripts/foundation.reveal.js"></script>
 
   <script>
   $(document).ready(function() {

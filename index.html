@@ -2,10 +2,65 @@
 layout: home
 title: Home
 ---
-<section>
+
+<!--section id="blog">
   <div class="row">
     <div class="small-12 columns">
+      <p>site majorly under construction / not really public.</p>
+    </div>
+    <hr>
+  </div>
+</section-->
 
+<section id="blog">
+  <div class="row">
+    <h4>About this site</h4>
+    <div class="small-12 columns">
+      <p>I suppose I'll use this space to talk about the site, or about me and why the site exists. Perhaps something about checking out my different projects. <a href="http://eightglasses.herokuapp.com/">Eight Glasses</a> (A hobby app I made), <a href="http://spaceparty.github.io/space-party-website/">The Space Party</a> (a U.S. political party, also under construction), and probably about <a href="http://boldprogressives.org/">BoldProgressives.org</a>, which is not a site I built, but where I work.</p>
     </div>
   </div>
 </section>
+
+<section id="blog">
+  <div class="row">
+
+    <h4>Posts</h4>
+
+  </div>
+  <div class="row">
+    <div class="small-12 columns card">
+      <h3> Sample Title -- Not Actually from a Post </h3>
+      <p> Sample text. Not actually from a template. However I need more placeholder text here and I'm not quite ready to just copy and paste the same thing a few times over to make a couple of sentences and then make a few paragraphs out of that. </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="small-12 columns card">
+      <h3> Sample Title -- Not Actually from a Post </h3>
+      <p> Sample text. Not actually from a template. However I need more placeholder text here and I'm not quite ready to just copy and paste the same thing a few times over to make a couple of sentences and then make a few paragraphs out of that. </p>
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="small-12 columns card">
+      <h3> Sample Title -- Not Actually from a Post </h3>
+      <p> Sample text. Not actually from a template. However I need more placeholder text here and I'm not quite ready to just copy and paste the same thing a few times over to make a couple of sentences and then make a few paragraphs out of that. </p>
+
+    </div>
+  </div>
+  
+  {% for post in site.posts %}
+  <div class="row">
+    <div class="small-12 columns card">
+      <aside><em>{{ post.datestring }}</em></aside>
+      <h3 class="title">
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </h3>
+
+      {{ post.excerpt }}
+      <p><a href="{{ post.url }}">[read on]</a></p>
+    </div>
+  </div>
+  {% endfor %}
+</section>
+
+
