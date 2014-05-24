@@ -1,0 +1,11 @@
+<div class="medium-3 columns">
+  <ul class="sidenav">
+  {% for post in site.posts %}
+  {% if post.category == page.category or page.name == "home" %}
+    <li>
+      <a {% if post.id == page.id %}class="active" {% endif %}href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endif %}
+  {% endfor %}
+  </ul>
+</div>
