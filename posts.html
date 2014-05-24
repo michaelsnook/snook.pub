@@ -1,0 +1,29 @@
+---
+layout: home
+title: Posts
+name: posts
+category: posts
+---
+
+
+<section class="border-top" id="blog">
+  
+  {% for post in site.posts %}
+  {% if post.category == 'posts' %}
+  <div class="row">
+    <div class="small-12 columns card">
+      <small><a href="{{ post.url }}"><em>{{ post.datestring }}</em></a></small>
+      <h3>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </h3>
+
+      {{ post.content }}
+      
+      <small><a href="{{ post.url }}">Permalink / comments</a></small>
+      
+    </div>
+  </div>
+  {% endif %}
+  {% endfor %}
+
+</section>

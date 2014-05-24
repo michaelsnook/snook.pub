@@ -1,0 +1,27 @@
+---
+layout: home
+title: Projects
+name: projects
+category: projects
+---
+
+
+<section class="border-top" id="blog">
+  
+  {% for post in site.posts %}
+  {% if post.category == 'projects' %}
+  <div class="row">
+    <div class="small-12 columns card">
+      <small><em>{{ post.datestring }}</em></small>
+      <h3>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </h3>
+
+      {{ post.excerpt }}
+      <p><a href="{{ post.url }}">[read on]</a></p>
+    </div>
+  </div>
+  {% endif %}
+  {% endfor %}
+
+</section>
