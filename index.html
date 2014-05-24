@@ -3,29 +3,16 @@ layout: home
 title: Home
 ---
 
-<!--section id="blog">
-  <div class="row">
-    <div class="small-12 columns">
-      <p>site majorly under construction / not really public.</p>
-    </div>
-    <hr>
-  </div>
-</section-->
 
 <section id="blog">
   <div class="row">
-    <h4>About this site</h4>
     <div class="small-12 columns">
-      <p>I suppose I'll use this space to talk about the site, or about me and why the site exists. Perhaps something about checking out my different projects. <a href="http://eightglasses.herokuapp.com/">Eight Glasses</a> (A hobby app I made), <a href="http://spaceparty.github.io/space-party-website/">The Space Party</a> (a U.S. political party, also under construction), and probably about <a href="http://boldprogressives.org/">BoldProgressives.org</a>, which is not a site I built, but where I work.</p>
+      <ul class="button-group radius">
+        <li><a href="#" class="button success">Posts</a></li>
+        <li><a href="#" class="button ">Projects</a></li>
+        <li><a href="#" class="button ">Contact</a></li>
+      </ul>
     </div>
-  </div>
-</section>
-
-<section id="blog">
-  <div class="row">
-
-    <h4>Posts</h4>
-
   </div>
   <div class="row">
     <div class="small-12 columns card">
@@ -47,7 +34,7 @@ title: Home
 
     </div>
   </div>
-  
+
   {% for post in site.posts %}
   <div class="row">
     <div class="small-12 columns card">
@@ -62,5 +49,3 @@ title: Home
   </div>
   {% endfor %}
 </section>
-
-

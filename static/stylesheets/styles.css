@@ -1,23 +1,27 @@
 body {
-  /* http://css-tricks.com/snippets/css/better-helvetica/ */ 
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  /* http://css-tricks.com/snippets/css/better-helvetica/ */
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
 }
 
 .card {
-  border-right: 1px solid #ddd;
+ /* border-right: 1px solid #ddd;*/
   border-left: 1px solid #ddd;
   padding-top: 15px;
   padding-bottom: 15px;
   margin-bottom: 15px;
-  
+
 }
 footer {
-  background-color: #444;
+  background-color: #305486;
   color: white;
   margin-top: 20px;
   padding-top: 30px;
   padding-bottom: 30px;
   font-weight: thin;
 }
-h4 { border-top: 1px solid #ddd; }
+nav .small-12 {
+  border-bottom: 1px solid #7094C9;
+  margin-bottom: 20px;
+}
+h4, .panel h4, li .button.secondary { color: #305486; }
