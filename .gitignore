@@ -1,3 +1,5 @@
 _site/*
 bower_components/*
 node_modules/*
+# exclude the css folder. you’ll have to `grunt build` to populate it.
+css/*

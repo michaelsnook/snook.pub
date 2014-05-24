@@ -1,6 +1,7 @@
 @import "settings";
 @import "foundation";
 $blue: #305486;
+$lightgray: #dddddd;
 
 // Or selectively include components
 // @import
@@ -46,24 +47,36 @@ body {
 }
 
 .card {
-  border-left: 1px solid #ddd;
+  border-left: 1px solid $lightgray;
   padding-top: 15px;
   padding-bottom: 15px;
   margin-bottom: 15px;
 }
+
+.panel h4, li .button.secondary {
+  color: $blue
+}
+
 footer {
   background-color: $blue;
-  color: white;
+  color: $lightgray;
   margin-top: 20px;
   padding-top: 30px;
   padding-bottom: 30px;
   font-weight: thin;
+  h4 {
+    color: $lightgray;
+  }
 }
 
 nav .small-12 {
   margin-bottom: 20px;
 }
 
-h4, .panel h4, li .button.secondary {
-  color: $blue
+.medium-3 .sub-nav dd {
+  margin-left: 0;
+  margin-right: 0;
+  a {
+    padding-right: 0.5rem; padding-left: 0.5rem;
+  }
 }
