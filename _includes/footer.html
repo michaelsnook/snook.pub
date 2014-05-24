@@ -1,0 +1,45 @@
+<footer>
+  <div class="row">
+    <div class="medium-12 columns">
+      <ul class="inline-list">
+        {% for item in site.footer %}
+        <li>{% if item.href %}<a href="{{ item.href }}">{% endif %}
+          {% if item.icon %}<i class="fi-{{ item.icon }}"></i>{% endif %}
+          {% if item.text %}{{ item.text }}{% endif %}
+        {% if item.href %}</a>{% endif %}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  
+    <div class="row">
+    <div class="medium-12 columns sticky">
+      <div class="row" id="sidebar">
+        <div class="medium-6 columns">
+          <h4>About this site</h4>
+
+          <p>I suppose I'll use this space to talk about the site, while I'm
+              using the site to talk about interesting ideas or projects I'd
+              like to do.</p>
+          <p>Perhaps check out a few things I made.
+          </p>
+        </div>
+        <div class="medium-6 columns">
+        
+          <p>
+            <ul><li><a href="http://eightglasses.herokuapp.com/">Eight Glasses</a>
+            is an app I made for fun and to learn python.</li>
+            <li><a href="http://spaceparty.github.io/space-party-website/">
+            The Space Party</a> is a radical tongue-in-cheek socialist
+            libertarian pacifist futurist party I am working on.
+            (<a href="http://www.coactivate.org/projects/spaceparty/blog/2013/11/16/why-the-space-party/">Read about it here</a>, and sign up for the mailing list,
+            if you're into that sort of thing.)</li>
+            <li>Also, <a href="http://boldprogressives.org/">BoldProgressives.org</a>,
+            which is not a site I built so much as where I work.</li></ul>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</footer>
