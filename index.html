@@ -13,7 +13,14 @@ name: home
       </h3>
 
       {{ post.excerpt }}
-      <p><a href="{{ post.url }}">[read on]</a></p>
+      
+      <p><a href="{{ post.url }}">
+        {% if post.category == 'projects' %}
+          Read more about this project.
+        {% else %}
+          Read this post.
+        {% endif %}
+      </a> <a href="{{ post.url }}#disqus_thread">comments</a></p>
     </div>
   </div>
   {% endfor %}
