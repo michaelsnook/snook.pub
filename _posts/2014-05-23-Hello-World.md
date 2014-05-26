@@ -22,3 +22,4 @@ and some posts will be associated with a project. Right now there are no project
 but I suppose I will throw up a page about the Space Party, which is a free-time project of 
 mine, and then I will show you all what I mean.
 
+**Edit:** Now you can see what I mean. 
