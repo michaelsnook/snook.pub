@@ -32,10 +32,13 @@
           <h3>
             <a href="{{ post.url }}">{{ page.title }}</a>
           </h3>
-    
+          <div>
           {{ content }}
           
-          <p><small><a href="{{ post.url }}">Permalink</a></small></p>
+          </div>
+          <p><a href="{{ post.url }}#disqus_thread">{num} comments</a></p>
+          
+          {% include disqus.html %}
         </div>
       </div>
       
@@ -60,5 +63,17 @@
   });
   </script>
 
+  <script type="text/javascript">
+  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  var disqus_shortname = 'michaelsnook'; // required: replace example with your forum shortname
+  
+  /* * * DON'T EDIT BELOW THIS LINE * * */
+  (function () {
+  var s = document.createElement('script'); s.async = true;
+  s.type = 'text/javascript';
+  s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+  (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+  }());
+  </script>
 </body>
 </html>
