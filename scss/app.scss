@@ -49,8 +49,15 @@ body {
 @media (min-width: 641px) {
 .border-left { border-left: 1px solid $lightgray; }
 .border-right { border-right: 1px solid $lightgray; }
-.border-top { border-top: 1px solid $lightgray; }
-.border-bottom { border-bottom: 1px solid $lightgray; }
+.border-top { 
+  border-top: 1px solid $lightgray; 
+  margin-top: 20px;
+}
+.border-bottom { 
+  border-bottom: 1px solid $lightgray; 
+  margin-bottom: 20px;
+}
+section#main { min-height: 390px; }
 }
 
 .card {
@@ -74,10 +81,7 @@ footer {
     color: $lightgray;
   }
 }
-
-nav .small-12 {
-  margin-bottom: 20px;
-}
+img.left.th { margin-right: 20px; margin-bottom: 10px; }
 
 .medium-3 .sub-nav dd {
   margin-left: 0;
