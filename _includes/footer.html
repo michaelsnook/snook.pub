@@ -2,12 +2,15 @@
   <div class="row">
     <div class="medium-12 columns">
       <ul class="inline-list">
-        {% for item in site.footer %}
-        <li>{% if item.href %}<a href="{{ item.href }}">{% endif %}
-          {% if item.icon %}<i class="fi-{{ item.icon }}"></i>{% endif %}
-          {% if item.text %}{{ item.text }}{% endif %}
-        {% if item.href %}</a>{% endif %}</li>
-        {% endfor %}
+      {% for item in site.footer %}
+        <li>
+        {% if item.href %}
+          <a href="{{ item.href }}">{{ item.text }}</a>
+        {% else %}
+          {{ item.text }}
+        {% endif %}
+        </li>
+      {% endfor %}
       </ul>
     </div>
   </div>
