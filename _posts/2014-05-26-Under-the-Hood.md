@@ -5,7 +5,7 @@ datestring: Monday, May 26, 2014
 category: posts
 ---
 
-In this post, I\'ll talk a bit about how I made the site, and why I chose to put it together the way I did. It\'s just HTML and CSS, with help from Github Pages, Jekyll, Foundation, SCSS, and Disqus. 
+I really like the stack I'm working with now, so this post is about how I built this site and why I chose to string things together the way I did. The site is pretty simple: just HTML and CSS, with help from Github Pages, Jekyll, Foundation, SCSS, and Disqus. 
 
 ###### GitHub Pages
 
