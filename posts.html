@@ -5,20 +5,20 @@ name: posts
 category: posts
 ---
   
-  {% for post in site.posts %}
-  {% if post.category == 'posts' %}
-  <div class="row">
-    <div class="small-12 columns card">
-      <small><a href="{{ post.url }}"><em>{{ post.datestring }}</em></a></small>
-      <h3>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-      </h3>
+{% for post in site.posts %}
+{% if post.category == 'posts' %}
+<div class="row">
+  <div class="small-12 columns card">
+    <small><a href="{{ post.url }}"><em>{{ post.datestring }}</em></a></small>
+    <h3>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </h3>
 
-      {{ post.content }}
-      
-      <p><a href="{{ post.url }}#disqus_thread">Comments</a></p>
-      
-    </div>
+    {{ post.content }}
+    
+    <p><a href="{{ post.url }}#disqus_thread">Comments</a></p>
+    
   </div>
-  {% endif %}
-  {% endfor %}
+</div>
+{% endif %}
+{% endfor %}
