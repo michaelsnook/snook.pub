@@ -30,6 +30,12 @@ body {
     .row { text-align: center; }
   }
 }
+
+.tabs {
+  dd, a { background: white !important; }
+  aa, dd a { transition: border 0.4s; }
+  dd.active { border-left: solid $blue 8px; }
+  dd:not(.active) a:hover { border-left: solid transparent 8px; }
 }
 
 
