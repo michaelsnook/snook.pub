@@ -1,5 +1,5 @@
 markdown: kramdown
-title: Michael Snook dot com
+title: snook.pub
 footer:
  - text: home
    icon: home
@@ -15,5 +15,5 @@ footer:
    href: https://github.com/michaelsnook
  - text: "CC0 1.0"
    icon: closed-caption
-   href: https://github.com/michaelsnook/michaelsnook/blob/gh-pages/LICENSE
+   href: https://github.com/michaelsnook/snook.pub/blob/gh-pages/LICENSE
  - text: "by me"

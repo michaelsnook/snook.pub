@@ -1,4 +1,4 @@
-michaelsnook dot com
+snook.pub
 ====================
 
-Just a WIP site for myself.
+Just another WIP site for myself.
