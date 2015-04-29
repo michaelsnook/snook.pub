@@ -6,7 +6,11 @@
   <link rel="icon" href="/static/images/favicon.png" type="image/x-icon" />
   <link rel="stylesheet" href="/css/app.css" />
 
-  <meta property="og:description" content="" />
+  <meta property="og:description" content="{% if page.fb_description %}{{page.fb_description}}{% else %}{{ page.excerpt | strip_html | truncatewords: 50 }}{% endif %}" />
+  <meta property="og:image"
+content="{% if page.fb_image %}{{ page.fb_image }}{% else %}{{ page.image }}{% endif %}" />
+  <meta property="og:title"
+content="{% if page.fb_title %}{{ page.fb_title }}{% else %}{{ page.title | strip_html | truncatewords: 50 }}{% endif %}" />
 
   <script src="/static/javascripts/modernizr.js"></script>
 </head>
