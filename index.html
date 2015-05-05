@@ -1,10 +1,13 @@
 ---
 layout: home
+fb_title: a space for writing and notes about projects
 title: Home
 name: home
 category: home
+fb_description: This site is a place for blog posts or writeups of project ideas that interest me.
+
 ---
-  
+
 {% for post in site.posts %}
 <div class="row">
   <div class="small-12 columns card">
@@ -14,7 +17,7 @@ category: home
     </h3>
 
     {{ post.excerpt }}
-    
+
     <p>
       <a href="{{ post.url }}">
         {% if post.category == 'projects' %}
