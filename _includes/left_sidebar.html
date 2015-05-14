@@ -1,14 +1,14 @@
 <dl class="tabs vertical border-top" data-tab>
-  <dd {% if page.name == 'home' %}class="active"{% endif %}>
+  <dd {% if page.pname == 'home' %}class="active"{% endif %}>
     <a href="/index.html">Home</a>
   </dd>
-  <dd {% if page.name == 'posts' or page.category == 'posts' %}class="active"{% endif %}>
+  <dd {% if page.pname == 'posts' or page.category == 'posts' %}class="active"{% endif %}>
     <a href="/posts.html">Posts</a>
   </dd>
-  <dd {% if page.name == 'projects' or page.category == 'projects' %}class="active"{% endif %}>
+  <dd {% if page.pname == 'projects' or page.category == 'projects' %}class="active"{% endif %}>
     <a href="/projects.html">Projects</a>
   </dd>
-  <dd {% if page.name == 'contact' or page.category == 'contact' %}class="active"{% endif %}>
+  <dd {% if page.pname == 'contact' or page.category == 'contact' %}class="active"{% endif %}>
     <a href="/contact.html">Contact</a>
   </dd>
 </dl>

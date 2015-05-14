@@ -1,10 +1,10 @@
 ---
 layout: home
 title: Posts
-name: posts
+pname: posts
 category: posts
 ---
-  
+
 {% for post in site.posts %}
 {% if post.category == 'posts' %}
 <div class="row">
@@ -15,9 +15,9 @@ category: posts
     </h3>
 
     {{ post.content }}
-    
+
     <p><a href="{{ post.url }}#disqus_thread">Comments</a></p>
-    
+
   </div>
 </div>
 {% endif %}
