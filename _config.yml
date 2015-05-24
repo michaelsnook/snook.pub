@@ -1,5 +1,11 @@
 markdown: kramdown
 title: snook.pub
+domainroot: http://snook.pub
+fb:
+  title: snook.pub
+  image: '/static/images/face.jpg'
+  description: "This site is where I record thoughts and ideas. It's a mix of one-off ideas for apps or projects, casual musings, and repeat commentary on developing thoughts around potential projects that really capture my imagination and passion and seem valuable for the world."
+  site_name: "Michael Snook's Weblog And Project Pad"
 footer:
  - text: home
    icon: home
