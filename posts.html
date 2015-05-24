@@ -6,7 +6,6 @@ category: posts
 ---
 
 {% for post in site.posts %}
-{% if post.category == 'posts' %}
 <div class="row">
   <div class="small-12 columns card">
     <small><a href="{{ post.url }}"><em>{{ post.datestring }}</em></a></small>
@@ -20,5 +19,4 @@ category: posts
 
   </div>
 </div>
-{% endif %}
 {% endfor %}

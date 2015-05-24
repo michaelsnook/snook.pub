@@ -1,7 +1,7 @@
 ---
 layout: posts
 title: "Wanted: Conditional Formatting in Collaborative Text"
-category: posts
+category: appidea
 datestring: Tuesday, May 5, 2015
 references:
   - link: https://www.facebook.com/michael.snook/posts/10102094430057186
