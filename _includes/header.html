@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>{{ site.title }}{% if page.title or page.fb_title %} | {{ page.title|default:page.fb_title }}{% endif %}</title>
+  <title>
+    {{site.title}}
+    {% if page.title or page.fb_title %}
+      | {{ page.title|default:page.fb_title }}
+    {% endif %}
+  </title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" sizes="64x64" href="/favicon.png" type="image/png" />
   <link rel="apple-touch-icon" sizes="64x64" href="/favicon.png" />
@@ -26,7 +31,7 @@ content="{{ site.title }}{% if page.title or page.fb_title %} | {{ page.fb_title
       <img class="site-pic" src="/static/images/face.jpg">
     </div>
     <div class="small-12 medium-9 columns titles">
-      <a href="/"><h1>michael snook's</h1></a>
+      <a href="/"><h1>michael snook&rsquo;s</h1></a>
       <h3 class="subheader">weblog and project pad</h3>
     </div>
   </div>
