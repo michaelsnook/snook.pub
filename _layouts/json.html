@@ -1,1 +1,8 @@
-
+[{% for row in page.list %}
+  {
+  {% for item in row %}
+   "{{ item[0] }}": "{{ item[1] }}"
+   {% if forloop.last == false %},{% endif %}
+  {% endfor %}
+  }{% if forloop.last == false %},{% endif %}
+{% endfor %}]
