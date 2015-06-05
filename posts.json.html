@@ -5,6 +5,6 @@
     {% if post.title %}"title": "{{ post.title }}",{% endif %}
     {% if post.datestring %}"datestring": "{{ post.datestring }}",{% endif %}
     {% if post.layout %}"layout": "{{ post.layout }}",{% endif %}
-    {% if post.category %}"category": "{{ post.category }}",{% endif %}
+    {% if post.category %}"category": "{{ post.category }}"{% endif %}
   }{% if forloop.last == false %},{% endif %}
 {% endfor %}]
