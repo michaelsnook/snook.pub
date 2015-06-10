@@ -3,11 +3,6 @@ layout: posts
 title: Easy WhatsApp Shares
 datestring: Friday, June 05, 2015
 category: posts
-javascript: |
-  $(document).ready(function(){
-    href = 'Check out this fast easy way to get people sharing your page on WhatsApp! ' + $('#whatsapp-share').prop('href');
-    $('#whatsapp-share').prop('href', 'whatsapp://send?text=' + encodeURIComponent(href)).removeClass('hide');
-  });
 ---
 
 Today I finally got around to trying out a new technique I heard about a couple
