@@ -33,7 +33,7 @@
 // $include-html-grid-classes: $include-html-classes;
 // $include-xl-html-grid-classes: false;
 
-// $row-width: rem-calc(1000);
+ $row-width: rem-calc(1140);
 // $total-columns: 12;
 
 // Global
@@ -100,7 +100,7 @@
 // $xxlarge-only: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)}) and (max-width:#{upper-bound($xxlarge-range)})";
 
 // Legacy
-// $small: $medium-up;
+// $small: $small-up;
 // $medium: $medium-up;
 // $large: $large-up;
 

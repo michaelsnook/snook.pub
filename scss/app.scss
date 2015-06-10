@@ -3,7 +3,7 @@
 $blue: #305486;
 $lightgray: #dddddd;
 
-@media (min-width: 641px) {
+@media #{$screen and $medium-up} {
   .border-left { border-left: 1px solid $lightgray; }
   .border-right { border-right: 1px solid $lightgray; }
   .border-top {
@@ -20,7 +20,7 @@ $lightgray: #dddddd;
   }
 }
 
-@media (max-width: 640px) {
+@media #{$screen and $small-only} {
   #header {
     .row { text-align: center; }
   }
@@ -33,12 +33,10 @@ $lightgray: #dddddd;
   dd:not(.active) a:hover { border-left: solid transparent 8px; }
 }
 
-
 img.site-pic {
   width: 150px;
   border-radius: 50%;
 }
-
 
 .card {
   padding-top: 15px;

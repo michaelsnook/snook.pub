@@ -126,7 +126,7 @@ select {
 
 .row {
   margin: 0 auto;
-  max-width: 62.5rem;
+  max-width: 71.25rem;
   width: 100%; }
   .row:before, .row:after {
     content: " ";
@@ -3963,7 +3963,7 @@ button:focus {
     .reveal-modal {
       left: 0;
       margin: 0 auto;
-      max-width: 62.5rem;
+      max-width: 71.25rem;
       right: 0;
       width: 80%; } }
   @media only screen and (min-width: 40.0625em) {
@@ -3979,35 +3979,35 @@ button:focus {
     .reveal-modal.tiny {
       left: 0;
       margin: 0 auto;
-      max-width: 62.5rem;
+      max-width: 71.25rem;
       right: 0;
       width: 30%; } }
   @media only screen and (min-width: 40.0625em) {
     .reveal-modal.small {
       left: 0;
       margin: 0 auto;
-      max-width: 62.5rem;
+      max-width: 71.25rem;
       right: 0;
       width: 40%; } }
   @media only screen and (min-width: 40.0625em) {
     .reveal-modal.medium {
       left: 0;
       margin: 0 auto;
-      max-width: 62.5rem;
+      max-width: 71.25rem;
       right: 0;
       width: 60%; } }
   @media only screen and (min-width: 40.0625em) {
     .reveal-modal.large {
       left: 0;
       margin: 0 auto;
-      max-width: 62.5rem;
+      max-width: 71.25rem;
       right: 0;
       width: 70%; } }
   @media only screen and (min-width: 40.0625em) {
     .reveal-modal.xlarge {
       left: 0;
       margin: 0 auto;
-      max-width: 62.5rem;
+      max-width: 71.25rem;
       right: 0;
       width: 95%; } }
   .reveal-modal.full {
@@ -4022,7 +4022,7 @@ button:focus {
       .reveal-modal.full {
         left: 0;
         margin: 0 auto;
-        max-width: 62.5rem;
+        max-width: 71.25rem;
         right: 0;
         width: 100%; } }
   .reveal-modal.toback {
@@ -4946,7 +4946,7 @@ meta.foundation-mq-topbar {
   .contain-to-grid .top-bar {
     margin-bottom: 0;
     margin: 0 auto;
-    max-width: 62.5rem; }
+    max-width: 71.25rem; }
   .top-bar-section {
     transition: none 0 0;
     left: 0 !important; }
@@ -6282,7 +6282,7 @@ th.hide-for-touch {
   .show-for-print {
     display: none !important; } }
 
-@media (min-width: 641px) {
+@media only screen and (min-width: 40.0625em) {
   .border-left {
     border-left: 1px solid #dddddd; }
   .border-right {
@@ -6298,7 +6298,7 @@ th.hide-for-touch {
   #header, #header .titles {
     margin-top: 20px; } }
 
-@media (max-width: 640px) {
+@media only screen and (max-width: 40em) {
   #header .row {
     text-align: center; } }
 
