@@ -14,10 +14,8 @@ link on your website, you can give your mobile and tablet visitors the ability t
 Here\'s how it\'s done:
 
 > 1. Add this code to your page:
->     <pre><code>
->     &lt;a href="whatsapp://send?text=[[ URL encoded
->     message goes here ]]"&gt;click this link&lt;/a&gt;
->     </code></pre>
+>     <pre><code>&lt;a href="whatsapp://send?text=[[ URL encoded
+>     message goes here ]]"&gt;click this link&lt;/a&gt;</code></pre>
 > 1. Celebrate.
 
 Aside from the incredibly easy setup, one of my favorite things about this is the seamless user experience: the link opens up my WhatsApp conversations list, showing the friends I talk with the most and am the most likely to want to talk to about the action I\'m sharing.
