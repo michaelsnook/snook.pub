@@ -11,17 +11,17 @@ body {
 @media (min-width: 641px) {
   .border-left { border-left: 1px solid $lightgray; }
   .border-right { border-right: 1px solid $lightgray; }
-  .border-top { 
-    border-top: 1px solid $lightgray; 
-    margin-top: 20px;
+  .border-top {
+    border-top: 1px solid $lightgray;
+    margin-top: 20px !important;
   }
-  .border-bottom { 
-    border-bottom: 1px solid $lightgray; 
+  .border-bottom {
+    border-bottom: 1px solid $lightgray;
     margin-bottom: 20px;
   }
   section#main { min-height: 390px; }
-  #header, #header .titles { 
-    margin-top: 20px; 
+  #header, #header .titles {
+    margin-top: 20px;
   }
 }
 
@@ -33,7 +33,7 @@ body {
 
 .tabs {
   dd, a { background: white !important; }
-  aa, dd a { transition: border 0.4s; }
+  a, dd a { transition: border 0.4s; }
   dd.active { border-left: solid $blue 8px; }
   dd:not(.active) a:hover { border-left: solid transparent 8px; }
 }

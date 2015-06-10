@@ -7,12 +7,12 @@ module.exports = function(grunt) {
         includePaths: ['bower_components/foundation/scss']
       },
       dist: {
-        options: {
+        /*options: {
           outputStyle: 'compressed'
-        },
+        },*/
         files: {
           'css/app.css': 'scss/app.scss'
-        }        
+        }
       }
     },
 
