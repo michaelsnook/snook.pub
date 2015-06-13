@@ -1,19 +1,17 @@
 {% include header.html %}
-
 <div class="body-wrapper">
   <div class="row">
-
     {% include left_sidebar.html %}
-
     <div class="medium-6 columns">
     <section id="main" class="border-top">
+
+  <!-- page or post content start -->  
       {{ content }}
+  <!-- page or post content end -->
+
     </section>
     </div>
-    
     {% include right_sidebar.html %}
-    
   </div>
 </div>
-
 {% include footer.html %}
