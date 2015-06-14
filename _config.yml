@@ -6,6 +6,17 @@ fb:
   image: '/static/images/face.jpg'
   description: "This site is where I record thoughts and ideas. It's a mix of one-off ideas for apps or projects, casual musings, and repeat commentary on developing thoughts around potential projects that really capture my imagination and passion and seem valuable for the world."
   site_name: "Michael Snook's Weblog And Project Pad"
+exclude:
+ - node_modules
+ - README.md
+ - CNAME
+ - Gruntfile.js
+ - humans.txt
+ - LICENSE
+ - stylesheets
+ - scss
+ - bower_components
+
 footer:
  - text: home
    icon: home
