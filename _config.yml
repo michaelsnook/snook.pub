@@ -16,7 +16,8 @@ exclude:
  - stylesheets
  - scss
  - bower_components
-
+ - package.json
+ - bower.json
 footer:
  - text: home
    icon: home
