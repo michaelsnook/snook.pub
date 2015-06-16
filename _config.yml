@@ -21,7 +21,7 @@ exclude:
 footer:
  - text: home
    icon: home
-   href: ./
+   href: /
  - text: twitter
    icon: social-twitter
    href: https://twitter.com/MichaelSnook
