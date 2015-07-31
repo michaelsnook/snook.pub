@@ -7,28 +7,28 @@
 
     <div class="medium-6 columns">
     <section id="main" class="border-top">
-      
+
       <div class="row">
         <div class="small-12 columns card">
           <small><em>{{ page.datestring }}</em></small>
-          <h3>
+          <h2>
             <a href="{{ post.url }}">{{ page.title }}</a>
-          </h3>
+          </h2>
           <div>
           {{ content }}
-          
+
           </div>
           <p><a href="{{ post.url }}#disqus_thread">Comments</a></p>
-          
+
           {% include disqus.html %}
         </div>
       </div>
-      
+
     </section>
     </div>
-    
+
     {% include right_sidebar.html %}
-    
+
   </div>
 </div>
 

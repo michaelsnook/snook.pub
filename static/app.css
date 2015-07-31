@@ -6324,6 +6324,7 @@ img.site-pic {
 .panel h4, li .button.secondary {
   color: #305486; }
 
+h2
 footer {
   background-color: #305486;
   color: #dddddd;
@@ -6331,7 +6332,8 @@ footer {
   padding-top: 30px;
   padding-bottom: 30px;
   font-weight: thin; }
-  footer h4 {
+  h2
+footer h4 {
     color: #dddddd; }
 
 img.left.th {
@@ -6345,6 +6347,6 @@ img.left.th {
     padding-right: 0.5rem;
     padding-left: 0.5rem; }
 
-h6 {
+h4, h6 {
   color: #999;
   font-weight: 600; }

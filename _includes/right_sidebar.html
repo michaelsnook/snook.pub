@@ -2,7 +2,7 @@
   <h4><small>Entries</small></h4>
   <ul class="sidenav">
   {% for post in site.posts %}
-  {% if page.layout == "home" or post.category == page.category or page.category == "posts" %}
+  {% if page.layout == "home" or page.category == post.category or page.category == "posts" or page.category == post.project or post.category == page.project %}
     <li>
       <a {% if post.id == page.id %}class="active" {% endif %}href="{{ post.url }}">{{ post.title }}</a>
     </li>
