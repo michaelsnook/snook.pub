@@ -93,7 +93,7 @@ var ringer = {
   go: function(){
     var idx=0;
 
-    $r.time = ((new Date().getTime()) - $r.countdown_to_time) * 7;
+    $r.time = ((new Date().getTime()) - $r.countdown_to_time) / 7;
     $('#target').text($r.countdown_to);
 
     for(var r_key in $r.rings) $r.unit(idx++,r_key,$r.rings[r_key]);
