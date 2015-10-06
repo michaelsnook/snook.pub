@@ -11,7 +11,7 @@ body, html {
   height: 100%;
   margin: 0;
 }
-h1, a { text-align: center; font-family: sans-serif; }
+h1, h4, a { text-align: center; font-family: sans-serif; }
 html {
   display: table;
 }
@@ -36,6 +36,8 @@ body {
   text-align: center;
 }
 #word { text-transform: capitalize; }
+.btn-group { display: inline-block; }
+.btn-group + .btn-group { margin-left: 15px; }
 .btn-group a {
   padding: 6px 15px;
   margin-left: -5px;
@@ -63,6 +65,7 @@ body {
 $(document).ready(function() {
 var ringer = {
   countdown_to: "10/23/2015 03:30:00 GMT+5:30",
+  countdown_two: "10/20/2015 03:30:00 GMT-5:00",
   rings: {
     'DAYS': {
       s: 86400000, // mseconds in a day,
@@ -106,11 +109,29 @@ var ringer = {
       $r.k = 1/7;
     } else return false;
     // change the UI to match
-    $r.animal = animal;
     $('#word').html(animal);
     $b.siblings().removeClass('active');
     $b.addClass('active');
   },
+
+  setTarget: function(b) {
+    // set vars
+    $b = $(b.target);
+    target = $b.html();
+    // pair animals w time quotients
+    if (target === 'takeoff') {
+      $r.countdown_to_time = new Date($r.countdown_two).getTime();
+    } else
+    if (target === 'landing') {
+      $r.countdown_to_time = new Date($r.countdown_to).getTime();
+    } else return false;
+    // change the UI to match
+    $('#target').html(target);
+    $('#datetime').text(new Date($r.countdown_to_time));
+    $b.siblings().removeClass('active');
+    $b.addClass('active');
+  },
+
 
   init: function(){
 
@@ -122,23 +143,25 @@ var ringer = {
       h: ($r.r_size + $r.r_thickness)
     };
 
-    $('#target').text($r.countdown_to);
-    $('.btn-group a').on('click', $r.setAnimal);
 
-    // loading the page from bookmark
-    if (window.location.hash) {
-      $('a[href=' + window.location.hash + ']').click();
-    }
+    $('#datetime').text($r.countdown_two);
+    $('.btn-group.animal a').on('click', $r.setAnimal);
+    $('.btn-group.target a').on('click', $r.setTarget);
+
     // loading the page base case
-    if ($('.btn-group a.active').length === 0) {
-      $('.btn-group a.default').click();
+    if ($('.btn-group.animal a.active').length === 0) {
+      $('.btn-group.animal a.default').click();
+      window.location.hash = '';
+    }
+    if ($('.btn-group.target a.active').length === 0) {
+      $('.btn-group.target a.default').click();
       window.location.hash = '';
     }
 
     $r.cvs.setAttribute('width',$r.size.w);
     $r.cvs.setAttribute('height',$r.size.h);
     $r.ctx = $r.cvs.getContext('2d');
-    $(document.body).append($r.cvs);
+    $('#app').append($r.cvs);
     $r.cvs = $($r.cvs);
     $r.ctx.textAlign = 'center';
     $r.actual_size = $r.r_size + $r.r_thickness;
@@ -211,11 +234,18 @@ ringer.init();
 </script>
 </head>
 <body>
-  <h1><span id="word">human</span> time to <span id="target"></span></h1>
-  <div class="btn-group">
-    <a href="#puppy">puppy</a>
-    <a href="#human" class="default">human</a>
-    <a href="#tortoise">tortoise</a>
+  <h1><span id="word">human</span> time until <span id="target"></span></h1>
+  <div id="app">
+    <div class="btn-group animal">
+      <a href="#puppy">puppy</a>
+      <a href="#human" class="default">human</a>
+      <a href="#tortoise">tortoise</a>
+    </div>
+    <div class="btn-group target">
+      <a href="#takeoff">takeoff</a>
+      <a href="#landing" class="default">landing</a>
+    </div>
   </div>
+  <h4><span id="datetime"></span></h4>
 </body>
 </html>
