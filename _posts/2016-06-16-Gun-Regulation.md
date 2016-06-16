@@ -22,8 +22,8 @@ happen on gun regulation. I welled up when I first saw the headlines. I was so p
 
 But that feeling quickly wore off when I read what was actually happening. Even on this issue, which should be a 
 slam dunk for Democrats right now, it happens that the party that's ostensibly on my side is doing things I find to 
-be not just imperfect but harmful and counter-productive. Taking shortcuts with civil liberties and racial animus 
-should never be acceptable strategies for getting a bill across the finish line. Shame on the Senate Democrats for 
+be not just imperfect but harmful and counter-productive. **Taking shortcuts with civil liberties and racial animus 
+should never be acceptable strategies for getting a bill across the finish line.** Shame on the Senate Democrats for 
 their opportunism, for this moral and political cowardice. And now we're going to have a facebook feed full over 
 liberals and progressives vehemently defending this approach in terms of both the policy and the politics.
 
