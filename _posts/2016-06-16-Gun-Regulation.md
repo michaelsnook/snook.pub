@@ -4,6 +4,7 @@ title: How Democrats Managed to Fuck Up the Gun Control Filibuster
 datestring: Thursday, June 16, 2016
 category: posts
 image: /static/images/watchlist.jpg
+fb_description: It is making my stomach turn to have to say this, but I can't support using the terrorist watch list as our way of regulating guns. It's not just a little off, it's downright wrong.
 ---
 
 It is making my stomach turn to have to say this, but: 
