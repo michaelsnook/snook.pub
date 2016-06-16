@@ -3,6 +3,7 @@ layout: posts
 title: How Democrats Managed to Fuck Up the Gun Control Filibuster
 datestring: Thursday, June 16, 2016
 category: posts
+image: http://i.huffpost.com/gen/1929873/thumbs/h-CHECKING-BOX-FORM-628x314.jpg
 ---
 
 It is making my stomach turn to have to say this, but: 
