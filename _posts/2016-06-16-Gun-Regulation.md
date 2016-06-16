@@ -24,7 +24,7 @@ But that feeling quickly wore off when I read what was actually happening. Even 
 slam dunk for Democrats right now, it happens that the party that's ostensibly on my side is doing things I find to 
 be not just imperfect but harmful and counter-productive. **Taking shortcuts with civil liberties and racial animus 
 should never be acceptable strategies for getting a bill across the finish line.** Shame on the Senate Democrats for 
-their opportunism, for this moral and political cowardice. And now we're going to have a facebook feed full over 
+their opportunism, for this moral and political cowardice. And now we're going to have a facebook feed full of 
 liberals and progressives vehemently defending this approach in terms of both the policy and the politics.
 
 I'm not against compromise, but compromise means you put up a bill to ban *a lot of guns* and eventually say yes to 
