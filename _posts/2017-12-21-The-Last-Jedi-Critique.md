@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: My mixed (but mostly bad) feelings about Star Wars: The Last Jedi
+title: "My mixed (but mostly bad) feelings about Star Wars: The Last Jedi"
 category: posts
 datestring: Thursday, Dec 21, 2017
 ---
