@@ -7,9 +7,11 @@ category: posts
 
 This site is pretty simple: just HTML and CSS, with help from Github Pages, Jekyll, Foundation, SCSS, and Disqus. This post has a bit about why these tools, and why I think they\'re a good fit for this project.
 
+_*edit:* updated to reflect new url https://snook.pub_
+
 ###### GitHub Pages
 
-My favorite way to start building a new site\-\-it\'s free, it\'s easy, and it\'s already integrated with my git repo. If you want to start putting HTML, javascript, and CSS up on the web, GitHub Pages is the quickest way to get started. This site is just [a GitHub repository](https://github.com/michaelsnook/michaelsnook), which gets served up as [a static HTML site](http://michaelsnook.github.io/michaelsnook). 
+My favorite way to start building a new site\-\-it\'s free, it\'s easy, and it\'s already integrated with my git repo. If you want to start putting HTML, javascript, and CSS up on the web, GitHub Pages is the quickest way to get started. This site is just [a GitHub repository](https://github.com/michaelsnook/snook.pub), which gets served up as static HTML.
 
 The site has no Apache config to worry about, no URLs.py, and no database, with all the hosting burden having been moved onto Github.  It\'s free and virtually uncrashable. You don\'t even have to log into a server to deploy changes\-\-just `git push` and let GitHub Pages do the rest. [If you\'re not familiar with Github Pages, check it out.](https://pages.github.com/)
 
